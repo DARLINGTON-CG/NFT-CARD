@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root
+{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-background: hsl(217, 54%, 11%);
+    --card-background: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0,0%,100%);
+    --paragraph-font-size: 18px;
+    --font-weight-small: 300;
+    --font-weight-medium: 400;
+    --font-weight-large: 600;
+}
+
+*{
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    height: 100vh;
+    background-color: var(--main-background);
+    display: grid;
+    place-items: center;
+
+}
+
+h3
+{
+    color: var(--white);
+    font-weight: var(--font-weight-large);
+}
+
+p
+{
+    color: var(--line-color);
+    font-weight: var(--font-weight-medium);
+}
+
+hr
+{
+    color: var(--line-color);
+}
+
+span
+{
+    color: var(--white);
+}
+
+.amount > p
+{
+    color: var(--cyan);
+    font-weight: var(--font-weight-small);
+}
+
+.days > p
+{
+    font-weight: var(--font-weight-small);
+}
+
+.nft-container
+{
+    background-color:var(--card-background);
+    width: min-content;
+    height: min-content;
+    padding: 1.3rem;
+    border-radius: 15px;
+    font-size: var(--paragraph-font-size);
+    margin: auto;
+    box-shadow: 2px 4px 50px black;
+}
+
+
+.nft-image
+{
+    border-radius: 10px;
+    width: 270px;
+    height: auto;
+}
+
+.amount-days
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount-days > div
+{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.profile
+{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.avatar
+{
+    width: 2.5rem;
+    height: 2.5rem;
+   
+}
