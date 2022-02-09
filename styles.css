@@ -29,10 +29,51 @@ body
 
 }
 
-h3
+.image-container
+{
+    position: relative;
+}
+
+.hover-image
+{
+    position: absolute;
+    align-items: center;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 700ms ease-in-out;
+    background-color: hsla(178, 100%, 50%, 0.3);
+    padding: 7.7rem 7.9rem;
+    border-radius: 10px;
+
+}
+
+.hover-image:hover
+{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.nft-image:hover
+{
+    cursor: pointer;
+    filter: blur(1px);
+}
+
+
+
+.nft-container > h3
 {
     color: var(--white);
     font-weight: var(--font-weight-large);
+}
+
+.nft-container > h3:hover
+{
+    cursor: pointer;
+    color: var(--cyan);
+    transition: color 500ms ease-in-out;
 }
 
 p
@@ -45,10 +86,21 @@ hr
 {
     color: var(--line-color);
 }
-
+/* 
 span
 {
     color: var(--white);
+} */
+.name
+{
+    color: var(--white);
+    transition: color 500ms ease-in-out;
+}
+
+.name:hover
+{
+    cursor: pointer;
+    color: var(--cyan);
 }
 
 .amount > p
@@ -78,7 +130,7 @@ span
 .nft-image
 {
     border-radius: 10px;
-    width: 270px;
+    width: 300px;
     height: auto;
 }
 
@@ -100,6 +152,7 @@ span
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .avatar
