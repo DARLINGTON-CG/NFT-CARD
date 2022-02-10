@@ -30,17 +30,7 @@ body {
   position: relative;
 }
 
-.hover-image {
-  position: absolute;
-  align-items: center;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 700ms ease-in-out;
-  background-color: hsla(178, 100%, 50%, 0.3);
-  padding: 7.7rem 7.9rem;
-  border-radius: 10px;
-}
+
 
 .hover-image:hover {
   opacity: 1;
@@ -101,12 +91,12 @@ span
   margin: auto;
   box-shadow: 2px 4px 50px black;
 }
-
+/* 
 .nft-image {
   border-radius: 10px;
   width: 300px;
   height: auto;
-}
+} */
 
 .amount-days {
   display: flex;
@@ -130,9 +120,7 @@ span
   width: 2.5rem;
   height: 2.5rem;
 }
-
-@media (min-width: 375px) {
-  .nft-image {
+ .nft-image {
     border-radius: 10px;
     width: 270px;
     height: auto;
@@ -149,4 +137,4 @@ span
     padding: 6.8rem 6.95rem;
     border-radius: 10px;
   }
-}
+
