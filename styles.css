@@ -63,13 +63,13 @@ body
 
 
 
-.nft-container > h3
+.nft-container > h1
 {
     color: var(--white);
     font-weight: var(--font-weight-large);
 }
 
-.nft-container > h3:hover
+.nft-container > h1:hover
 {
     cursor: pointer;
     color: var(--cyan);
