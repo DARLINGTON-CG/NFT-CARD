@@ -1,163 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 
-:root
-{
-    --soft-blue: hsl(215, 51%, 70%);
-    --cyan: hsl(178, 100%, 50%);
-    --main-background: hsl(217, 54%, 11%);
-    --card-background: hsl(216, 50%, 16%);
-    --line-color: hsl(215, 32%, 27%);
-    --white: hsl(0,0%,100%);
-    --paragraph-font-size: 18px;
-    --font-weight-small: 300;
-    --font-weight-medium: 400;
-    --font-weight-large: 600;
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-background: hsl(217, 54%, 11%);
+  --card-background: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --paragraph-font-size: 18px;
+  --font-weight-small: 300;
+  --font-weight-medium: 400;
+  --font-weight-large: 600;
 }
 
-*{
-    font-family: 'Outfit', sans-serif;
-    box-sizing: border-box;
+* {
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
 }
 
-body
-{
-    margin: 0;
-    height: 100vh;
-    background-color: var(--main-background);
-    display: grid;
-    place-items: center;
-
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--main-background);
+  display: grid;
+  place-items: center;
 }
 
-.image-container
-{
-    position: relative;
+.image-container {
+  position: relative;
 }
 
-.hover-image
-{
-    position: absolute;
-    align-items: center;
-    top:0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 700ms ease-in-out;
-    background-color: hsla(178, 100%, 50%, 0.3);
-    padding: 7.7rem 7.9rem;
-    border-radius: 10px;
-
+.hover-image {
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 700ms ease-in-out;
+  background-color: hsla(178, 100%, 50%, 0.3);
+  padding: 7.7rem 7.9rem;
+  border-radius: 10px;
 }
 
-.hover-image:hover
-{
-    opacity: 1;
-    cursor: pointer;
+.hover-image:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
-
-.nft-image:hover
-{
-    cursor: pointer;
-    filter: blur(1px);
+.nft-container > h1 {
+  color: var(--white);
+  font-weight: var(--font-weight-large);
+  font-size: 1.5rem;
 }
 
-
-
-.nft-container > h1
-{
-    color: var(--white);
-    font-weight: var(--font-weight-large);
+.nft-container > h1:hover {
+  cursor: pointer;
+  color: var(--cyan);
+  transition: color 500ms ease-in-out;
 }
 
-.nft-container > h1:hover
-{
-    cursor: pointer;
-    color: var(--cyan);
-    transition: color 500ms ease-in-out;
+p {
+  color: var(--line-color);
+  font-weight: var(--font-weight-medium);
 }
 
-p
-{
-    color: var(--line-color);
-    font-weight: var(--font-weight-medium);
-}
-
-hr
-{
-    color: var(--line-color);
+hr {
+  color: var(--line-color);
 }
 /* 
 span
 {
     color: var(--white);
 } */
-.name
-{
-    color: var(--white);
-    transition: color 500ms ease-in-out;
+.name {
+  color: var(--white);
+  transition: color 500ms ease-in-out;
 }
 
-.name:hover
-{
-    cursor: pointer;
-    color: var(--cyan);
+.name:hover {
+  cursor: pointer;
+  color: var(--cyan);
 }
 
-.amount > p
-{
-    color: var(--cyan);
-    font-weight: var(--font-weight-small);
+.amount > p {
+  color: var(--cyan);
+  font-weight: var(--font-weight-small);
 }
 
-.days > p
-{
-    font-weight: var(--font-weight-small);
+.days > p {
+  font-weight: var(--font-weight-small);
 }
 
-.nft-container
-{
-    background-color:var(--card-background);
-    width: min-content;
-    height: min-content;
-    padding: 1.3rem;
-    border-radius: 15px;
-    font-size: var(--paragraph-font-size);
-    margin: auto;
-    box-shadow: 2px 4px 50px black;
+.nft-container {
+  background-color: var(--card-background);
+  width: min-content;
+  height: min-content;
+  padding: 1.3rem;
+  border-radius: 15px;
+  font-size: var(--paragraph-font-size);
+  margin: auto;
+  box-shadow: 2px 4px 50px black;
 }
 
+.nft-image {
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+}
 
-.nft-image
-{
+.amount-days {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount-days > div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@media (min-width: 375px) {
+  .nft-image {
     border-radius: 10px;
-    width: 300px;
+    width: 270px;
     height: auto;
-}
+  }
 
-.amount-days
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-.amount-days > div
-{
-    display: flex;
+  .hover-image {
+    position: absolute;
     align-items: center;
-    gap: 0.3rem;
-}
-
-.profile
-{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.avatar
-{
-    width: 2.5rem;
-    height: 2.5rem;
-   
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 700ms ease-in-out;
+    background-color: hsla(178, 100%, 50%, 0.3);
+    padding: 6.8rem 6.95rem;
+    border-radius: 10px;
+  }
 }
